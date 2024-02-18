@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MyContactos">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_altura"
+        android:layout_marginBottom="@dimen/margen_vertical"
+        android:background="#6A45B5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/ibregresar"
+                android:layout_width="@dimen/appbar_altura"
+                android:layout_height="match_parent"
+                android:backgroundTint="#6A45B5"
+                android:contentDescription="TODO"
+                android:src="@drawable/baseline_arrow_back_ios_24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:text="Contactos (RV)"
+                android:textColor="@color/white"
+                android:textSize="45dp" />
+        </LinearLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvcontactos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        android:background="#D1B0D8" />
+
+</LinearLayout>

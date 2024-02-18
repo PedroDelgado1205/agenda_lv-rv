@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/abtitulo"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/appbar_altura"
+        android:layout_marginBottom="@dimen/margen_vertical"
+        android:background="#6A45B5">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Agenda"
+            android:textSize="45dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:id="@+id/etnombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        android:hint="Nombre"
+        android:paddingLeft="@dimen/padding_text"/>
+    <EditText
+        android:id="@+id/ettelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        android:hint="Telefono"
+        android:paddingLeft="@dimen/padding_text"/>
+    <EditText
+        android:id="@+id/etemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        android:hint="e-mail"
+        android:paddingLeft="@dimen/padding_text"/>
+
+    <Button
+        android:id="@+id/btnagregar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        app:cornerRadius="@dimen/corener_boton"
+        android:text="Agregar"/>
+
+    <Button
+        android:id="@+id/btnmostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        app:cornerRadius="@dimen/corener_boton"
+        android:text="mostrar (LV)"
+        android:backgroundTint="#D81B60"/>
+
+    <Button
+        android:id="@+id/btnmostrar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margen_horizontal"
+        android:layout_marginVertical="@dimen/margen_vertical"
+        app:cornerRadius="@dimen/corener_boton"
+        android:text="mostrar (RV)"
+        android:backgroundTint="#8E24AA"/>
+
+</LinearLayout>
